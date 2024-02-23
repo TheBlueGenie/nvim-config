@@ -1,5 +1,5 @@
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "rust_analyzer"}
+  ensure_installed = { "lua_ls", "rust_analyzer", "ols"}
 })
 
 local lspconfig = require('lspconfig')
@@ -31,7 +31,7 @@ require("lspconfig").lua_ls.setup {
 --require("lspconfig").solargraph.setup({})
 --require("lspconfig").tsserver.setup({})
 --require("lspconfig").gopls.setup({})
---require("lspconfig").tailwindcss.setup({})
+require("lspconfig").ols.setup({})
 require("lspconfig").rust_analyzer.setup({})
 
 vim.api.nvim_create_autocmd('LspAttach', {
