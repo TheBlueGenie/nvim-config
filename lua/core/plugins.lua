@@ -1,9 +1,10 @@
 require("lazy").setup({
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+    --{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     "tpope/vim-commentary",
     "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
-    "ellisonleao/gruvbox.nvim",
+    {"ellisonleao/gruvbox.nvim",
+        priority = 1000, lazy = false},
     "dracula/vim",
     "nvim-lualine/lualine.nvim",
     "nvim-treesitter/nvim-treesitter",
