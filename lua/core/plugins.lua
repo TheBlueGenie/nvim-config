@@ -3,9 +3,17 @@ require("lazy").setup({
     "tpope/vim-commentary",
     "nvim-tree/nvim-tree.lua",
     "nvim-tree/nvim-web-devicons",
-    {"ellisonleao/gruvbox.nvim",
-        priority = 1000, lazy = false},
-    "dracula/vim",
+    --{
+    --    "ellisonleao/gruvbox.nvim",
+    --    priority = 1000, 
+    --    lazy = false
+    --},
+    {
+        "folke/tokyonight.nvim",
+            lazy = false,
+            priority = 1000,
+            opts = {},
+    },
     "nvim-lualine/lualine.nvim",
     "nvim-treesitter/nvim-treesitter",
     "vim-test/vim-test",
